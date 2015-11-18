@@ -1,9 +1,2 @@
-server.js
-credentials.js
-routes
+.idea
 node_modules
-
-/www/res
-/www/scripts/viewer3D.js
-/www/scripts/three.min.js
-/www/scripts/lmvworker.js

@@ -13,16 +13,22 @@ var metadata;
 var _blockEventMain = false;
 var _blockEventSecondary = false;
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+$(document).ready(function() {
 
         //  get and refresh token function
     var getToken =  function() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", 'http://' + window.location.host + '/api/token', false);
-        xhr.send(null);
+        var accessToken;
 
-        var res = JSON.parse(xhr.responseText);
-        return res.access_token;               
+        $.ajax({
+            type: "GET",
+            url: "api/auth",
+            async: false,
+            success : function(data) {
+                accessToken = $.parseJSON(data).access_token;
+            }
+        });
+
+        return accessToken;
     }
 
         //  viewer initializer
