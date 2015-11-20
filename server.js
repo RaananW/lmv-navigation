@@ -25,10 +25,10 @@ app.get('/api/auth', function (req, authRes) {
 
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || process.argv[2] || 3000);
 var server = app.listen(app.get('port'), function() {
 
     console.log('Server listening on: ');
     console.log(server.address());
-    console.log('Open this link to see the app: http://localhost:3000/');
+    console.log('Open this link to see the app: http://localhost:' + app.get('port') + '/');
 });
