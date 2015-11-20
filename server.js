@@ -17,7 +17,8 @@ app.get('/api/auth', function (req, authRes) {
             body += chunk;
         });
         res.on('end', function() {
-            authRes.json(body);
+            authRes.setHeader("Content-Type", "application/json");
+            authRes.end(body);
         });
     }).on('error', function(e) {
         console.log("Got error: " + e.message);

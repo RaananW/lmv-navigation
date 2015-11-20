@@ -24,7 +24,7 @@ $(document).ready(function() {
             url: "api/auth",
             async: false,
             success : function(data) {
-                accessToken = $.parseJSON(data).access_token;
+                accessToken = data.access_token;
             }
         });
 
