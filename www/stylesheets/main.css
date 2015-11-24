@@ -290,6 +290,7 @@ img {
 
 #viewer3D {
 	z-index: 99;
+    background: url("../images/loader.gif") no-repeat center;
 }
 
 /*#viewer2D {
@@ -303,6 +304,7 @@ img {
 	max-height: 300px;
 	z-index: 107;
 	position: absolute;
+    background: url("../images/loader.gif") no-repeat center;
 
 	-moz-box-shadow:    1 3px 6px -3px gray;
     -webkit-box-shadow: 1 3px 6px -3px gray;

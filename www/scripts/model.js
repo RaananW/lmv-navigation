@@ -83,7 +83,6 @@ $(document).ready(function() {
 
     initialize();
     metadata = JSON.parse(rac); // read hardwired location data for coordinate system mapping
-    initializeControlPanel();   // init control panel
     initDraggableDiv();         // init draggable behavieor for viewer2D container
 
 });
