@@ -5,16 +5,8 @@
     <title>2D/3D Navigation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-    <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
-    <!-- Viewer production -->
-    <link type="text/css" rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css"/>
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <script src="scripts/model.js"></script>
-    <script src="scripts/marker.js"></script>
-    <script src="rac.json"></script>
 </head>
 
 <body>
@@ -25,5 +17,16 @@
             <div class="draggable-body"><div id="viewer2D"></div></div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="adsk/style.css"/>
+    <script src="adsk/viewer3D.min.js"></script>
+
+    <script src="scripts/model.js"></script>
+    <script src="scripts/marker.js"></script>
+    <script src="rac.json"></script>
+
 </body>
+
 </html>
